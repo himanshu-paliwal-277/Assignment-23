@@ -1,0 +1,48 @@
+Q4. Compare Promises to callbacks and discuss why Promises are preferred for managing asynchronous code.
+
+When dealing with asynchronous code in JavaScript, both Promises & callbacks are commonly used mechanisms.
+
+
+
+Callbacks : A callback is a function passed into another function as an argument, which is then invoked after the completion of a task.
+
+
+Advantages :
+
+- Simplicity: For simple cases, callbacks are straightforward and easy to understand.
+
+- Control: Callbacks provide explicit control over the execution order of asynchronous tasks.
+
+Disadvantages :
+
+- Callback Hell: Nested callbacks can lead to deeply nested code, often referred to as "callback hell" or "pyramid of doom," which can be difficult to read and maintain.
+
+- Error Handling: Error handling can be cumbersome with callbacks, as you need to handle errors in each callback individually.
+
+- Inversion of Control: Using callbacks means handing over control to the function you’re calling, which can lead to unpredictable execution sequences.
+
+
+
+Promises : A Promise is an object representing the eventual completion or failure of an asynchronous operation and its resulting value.
+
+
+Advantages :
+
+- Chaining: Promises allow chaining of asynchronous operations, which helps in writing more readable and maintainable code. The .then() method enables chaining operations, while .catch() is used for error handling.
+
+- Error Handling: Promises provide a unified way to handle errors. A single .catch() method can handle errors from multiple .then() calls in the promise chain.
+
+- Avoiding Callback Hell: Promises help to avoid nested callbacks by flattening the structure of asynchronous operations.
+
+- Asynchronous Control: Promises allow for better control over asynchronous tasks through methods like Promise.all() and Promise.race(), which can aggregate multiple promises or race them, respectively.
+
+- Readability: Promises often result in cleaner and more readable code compared to deeply nested callbacks.
+
+
+Why Promises are Preferred -
+
+
+- Improved Readability
+- Better Error Handling
+- Promises allow chaining of multiple asynchronous operations
+- Promises offer advanced control for handling multiple asynchronous operations simultaneously.
