@@ -1,0 +1,33 @@
+Q5. List and briefly explain some common Browser APIs available to JavaScript developers.
+
+1. DOM (Document Object Model) API :
+
+Allows interaction and manipulation of the HTML and XML documents.
+
+Main Methods: getElementById(), querySelector(), addEventListener(), createElement(), appendChild().
+
+Usage - Modify the content, structure, and style of web pages dynamically.
+
+2. Fetch API :
+
+Provides a modern way to make HTTP requests and handle responses.
+
+Main Methods: fetch(), Response.json(), Response.text().
+
+Usage: Replace the older XMLHttpRequest for fetching resources and handling responses with promises.
+
+3. LocalStorage and SessionStorage :
+
+Store data on the client-side in key-value pairs.
+
+Main Methods: setItem(), getItem(), removeItem(), clear().
+
+Usage: Persist data across page reloads (LocalStorage) or within a single session (SessionStorage).
+
+4. Canvas API
+
+Allows drawing graphics on a web page using a <canvas> element.
+
+Methods: getContext(), beginPath(), lineTo(), arc(), fill().
+
+Usage: Create and manipulate graphics, animations, and complex visualizations.
